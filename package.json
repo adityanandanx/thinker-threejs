@@ -1,0 +1,26 @@
+{
+  "name": "second",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"pnpm build:css\" ",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:css": "tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "@types/three": "^0.170.0",
+    "lenis": "^1.1.17",
+    "motion": "^11.12.0",
+    "three": "^0.170.0"
+  }
+}
