@@ -10,7 +10,6 @@ const sceneManager = new SceneManager(canvas);
 const lenis = new Lenis({
   autoRaf: true,
   duration: 0.6,
-  infinite: true,
 });
 
 animate("#canvas", { opacity: [0, 1] }, { duration: 7 });
